@@ -20,9 +20,11 @@ export default function Factory() {
 }
 
 function Car({make}) {
+    console.log('car')
     return <button onClick={make}>car</button>
 }
 
 function Ship({make}) {
+    console.log('ship')
     return <button onClick={make}>ship</button>
 }

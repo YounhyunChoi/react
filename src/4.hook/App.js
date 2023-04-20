@@ -1,4 +1,4 @@
-import Main from './2.useCallback/1.Factory'
+import Main from './3.useMemo/1.Factory'
 
 export default function App() {
     return <Main/>
