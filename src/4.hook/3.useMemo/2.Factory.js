@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useMemo} from 'react'
 
 export default function Factory() {
     console.log('factory')
@@ -9,7 +9,7 @@ export default function Factory() {
     const makeCar = () => setCarCnt(carCnt + 1)
     const makeShip = () => setShipCnt(shipCnt + 1)
 
-    let porductCnt = carCnt + shipCnt
+    let porductCnt = useMemo(() => carCnt + shipCnt, [shipCnt])
 
     return (
         <>
